@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clothing Inventory</h1>
+        <div class="form-card">
+            <h3>Add New Clothing item</h3>
+            <div class="inputs">
+                <div><label>Name</label><input id="nameInput"  type="text" placeholder="e.g. T-shirt"></div>
+                <div><label>Price</label><input id="priceInput" type="number" placeholder="e.g 500"></div>
+                <div><label>size</label><input id="sizeInput" type="text" placeholder="e.g.M,L,XL"></div>
+            </div>
+            <div class="buttons">
+                <button id="addBtn" class="primary"> + &nbsp;Add Clothing</button>
+                <button id="clearBtn" class="secondary">ClearAll</button>
+            </div>
+        </div>
+        <h2>sync/async Topic Demo</h2>
+        <div class="topic-grid">
+            <button id="syncBtn" class="topic active">1. synchronous(Block)</button>
+            <button id="asyncBtn" class="topic">2. Asynchronous(set Timeout)</button>
+            <button id="callbackBtn" class="topic">3. Callback</button>
+            <button id="promiseBtn" class="topic">4. Promise</button>
+            <button id="asyncAwaitBtn" class="topic">5. Async/Await</button>
+            <button  id="apiBtn" class="topic">Fetch API(fakestore)</button>
+        </div>
+        <p class="label">demoResult:</p>
+        <div id="demoResult">>yahan demo dekhega</div>
+        <h3 id="totalText">Total: 0 &nbsp;.&nbsp; ₹0</h3>
+        <h3>Items</h3>
+        <div id="resultDiv"></div>
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>

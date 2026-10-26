@@ -1,0 +1,143 @@
+body{
+    background: #f1f3f6;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container{
+    margin: auto;
+    max-width: 800px;
+}
+h1{
+    color: #1a3dab;
+}
+.form-card{
+    background: white;
+    padding: 5px 20px 20px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #0001;
+}
+.inputs{
+    display: flex;
+    gap:15px;
+}
+.inputs div{
+    flex: 1;
+}
+label{
+    font-size: 14px;
+    font-weight: bold;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+.buttons{
+    text-align: center;
+    margin-top: 10px;
+}
+.primary{
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+.secondary{
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-left:10px ;
+}
+.topic-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.topic{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background: #e9ecef;
+    cursor: pointer;
+}
+.topic.active{
+    background: #ffe4b5;
+    border-color: #ffae42;
+}
+#demoResult{
+    background: black;
+    color: #a6ff00;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: monospace;
+}
+#resultDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.card{
+    background: lightblue;
+    width: 150px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px #0001;
+    cursor: pointer;
+}
+.card b{
+    font-size: 18px;
+}
+.price{
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.size{
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 3px 10px;
+    display: inline-block;
+    margin-top: 8px;
+}
+@media(max-width:600px){
+    .inputs{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .topic-grid{
+        display: grid;
+        grid-template-columns: 1fr,1fr;
+    }
+    #resultDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .card{
+        width: 100%;
+    }
+    .buttons{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .secondary{
+        margin-left: 0;
+    }
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
